@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        小米商城 - 小米10 Pro、Redmi 10X、小米MIX Alpha，小米电视官方网站
+    </title>
+    <!-- 引入重制样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 引入公共样式表 -->
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- 引入图标字体库 -->
+    <link rel="stylesheet" href="./fa/css/all.min.css">
+    <!-- 引入当前页面样式表 -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="../小米首页/img/favicon.ico">
+</head>
+
+<body>
+
+    <!-- 顶部导航条 -->
+    <!-- 顶部导航条外部容器 -->
+    <div class="topbar-wrapper">
+        <!-- 创建内部容器 -->
+        <div class="topbar w clearfix">
+            <!-- clearfix 解决导航条高度塌陷问题 w直接引入容器宽度 -->
+
+            <!-- 左侧导航条 -->
+            <ul class="service">
+                <li><a href="javascript:;">小米商城</a></li>
+                <li class="line">|</li>
+                <!-- 偷懒做法：给导航条中间加竖线 -->
+                <li><a href="javascript:;">MIUI</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">loT</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">云服务</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">金融</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">有品</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">小爱开放平台</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">企业团购</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">资质证照</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">协议规定</a></li>
+                <li class="line">|</li>
+                <li class="app-wrapper">
+                    <a class="app" href="javascript:;">
+                        下载app
+                        <!-- 二维码能点，所以放到超链接里面 -->
+                        <!-- 添加弹出层 -->
+                        <div class="qrcode">
+                            <img src="./img/erweima.png" alt="">
+                            <span>小米商城app</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">Select Location</a></li>
+
+            </ul>
+            <!-- 购物车 -->
+            <ul class="shop-cart">
+                <a href="javascript:;">
+                    <!-- 放购物车图标 -->
+                    <i class="fas fa-shopping-cart"></i>
+                    购物车（0）
+
+                </a>
+                <!-- 超链接里面能放字，没必要再建一个块去放文字，纯属tkzfp -->
+                <!-- 
+                     <i class="fas fa-shopping-cart">
+                        <div>购物车(0)</div>
+                    </i>
+                             不方便
+                 -->
+                <div class="textwrapper">
+                    <!-- 这个下拉框不是超链接，放在ul里面 -->
+                    <span class="text">购物车中还没有商品，赶紧选购吧！</span>
+
+                </div>
+            </ul>
+            <!-- 用户信息 -->
+            <ul class="user-info">
+                <li><a href="javascript:;">登录</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">注册</a></li>
+                <li class="line">|</li>
+                <li><a href="javascript:;">消息通知</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- 创建一个头部外部容器 -->
+    <div class="header-wrapper">
+        <div class="header w">
+            <h1 class="logo" title="小米官网">
+                小米官网
+                <!-- h1标签加文字，为了方便让搜索引擎找到 -->
+                <a class="home" href="/"></a>
+                <a class="mi" href="/"></a>
+            </h1>
+            <div class="nav-wrapper">
+                <!-- 创建导航条 -->
+                <ul class="nav clearfix">
+                    <!-- 避免高度塌陷，加个clearfix -->
+                    <!-- 给li设置类， -->
+                    <li class="all-goods-wrapper">
+                        <a href="#" class="all-goods">全部商品分类</a>
+                        <!-- 创建中间左侧导航条，因为是头部的一部分，
+                            鼠标划到全部商品分类会自己弹出来，所以写在这 -->
+                        <ul class="left-menu">
+                            <li>
+                                <a href="#">手机 电话卡 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">电视 盒子 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">笔记本 显示器 平板 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">家电 插线板 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">出行 穿戴 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">智能 路由器 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">电源 配件 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">健康 儿童 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">耳机 音箱 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">生活 箱包 <i class="fas fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">小米手机</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">Redmi 红米</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">电视</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">笔记本</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">家电</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">路由器</a>
+                    </li>
+                    <li class="show-goods">
+                        <a href="#">智能硬件</a>
+                    </li>
+                    <li>
+                        <a href="#">服务</a>
+                    </li>
+                    <li>
+                        <a href="#">社区</a>
+                    </li>
+                    <!-- 创建ul下面的下拉框 -->
+                    <div class="goods-info">
+
+                    </div>
+                </ul>
+            </div>
+            <!-- 创建搜索框容器 -->
+            <div class="search-wrapper">
+                <form class="search" action="#">
+                    <!-- 创建表单 -->
+                    <input class="search-inp" type="text">
+
+
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                        <!-- u标签会有下划线,直接用i标签 -->
+                    </button>
+                </form>
+                <div class="search-info">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 创建banner ，banner指网站最吸引人的一块 -->
+    <div class="banner-wrapper">
+        <div class="banner w">
+            <ul class="img-list">
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/banner1.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/banner2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/banner3.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/banner4.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/banner5.jpg" class="banner5" alt="">
+                    </a>
+                </li>
+
+            </ul>
+            <!-- 导航点 -->
+            <div class="pointer">
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            <!-- 雪碧图箭头 -->
+            <div class="prev-next">
+                <a class="prev" href="">
+                </a>
+                <a class="next" href="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="to-top">
+        <ul>
+            <li class="mobile">
+                <a href="#">
+                    <i class="fas fa-mobile"></i>
+                </a>
+                <div class="mobile-wrapper">
+                    <img src="../小米首页/img/mibile-QRcode.png" alt="">
+                    <div class="mobile-triangle">
+                    </div>
+                    扫码领取新人百元礼包
+                </div>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-user"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-wrench"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-headphones"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="ad-wrapper w">
+        <div class="ad-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/clock.png" alt="">
+                        小米秒杀
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/BUILDING.png" alt="">
+                        企业团购
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/F.png" alt="">
+                        F码通道
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/SIM.png" alt="">
+                        米粉卡
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/RMBcircle.png" alt="">
+                        以旧换新
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../小米首页/img/RMB.png" alt="">
+                        话费充值
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="ad-img">
+            <a href="#">
+                <img src="../小米首页/img/d158f243b54d5ec68dd2ac72bd24555d.jpg" alt="">
+            </a>
+        </div>
+        <div class="ad-img">
+            <a href="#">
+                <img src="../小米首页/img/fbff319c7dd00e75c9758acf248d3784.jpg" alt="">
+            </a>
+        </div>
+        <div class="ad-img">
+            <a href="#">
+                <img src="../小米首页/img/816a66edef10673b4768128b41804cae.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
